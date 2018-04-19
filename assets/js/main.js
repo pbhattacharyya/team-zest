@@ -19,6 +19,7 @@
 		var	$window = $(window),
 			$body = $('body'),
 			$sidebar = $('#sidebar');
+			$header = $('#header')
 
 		// Hack: Enable IE flexbox workarounds.
 			if (skel.vars.IEVersion < 12)
@@ -58,6 +59,18 @@
 					skel.breakpoint('medium').active
 				);
 			});
+
+
+		// Topbar.
+		var $home = $('#homepage'), 
+			$concept1 = $('#concept1page')
+			$concept2 = $('#concept2page')
+			$concept3 = $('#concept3page')
+			$aboutus = $('#aboutpage');
+		
+			
+			
+			
 
 		// Sidebar.
 			if ($sidebar.length > 0) {
