@@ -13,8 +13,8 @@
 	</header> -->
 
 <div class="topnav" id="myTopnav">
-		<a id="hamburger" href="javascript:void(0);" style="font-size: 1.3em;" class="icon" onclick="myFunction()">&#9776;</a>
-		<a class = "dropdown-button close-menu" href="javascript:void(0);" style="font-size: 1.3em;" onclick="myFunction()">&#x2715;</a>
+		<a id="hamburger" href="javascript:void(0);" style="font-size: 1.3em;" class="icon" onclick="openCloseMenu()">&#9776;</a>
+		<a class = "dropdown-button close-menu" href="javascript:void(0);" style="font-size: 1.3em;" onclick="openCloseMenu()">&#x2715;</a>
 		<a class = "dropdown-button" href="index.html">HOME</a>
 		<a class = "dropdown-button" href="concept1.html">CONCEPT 1</a>
 		<a class = "dropdown-button" href="concept2.html">CONCEPT 2</a>
@@ -23,15 +23,16 @@
 </div>
 
 <script>
-	function myFunction() {
+	function openCloseMenu() {
 		var x = document.getElementById("myTopnav");
 		var y = document.getElementById("hamburger");
 		if (x.className === "topnav") {
-			x.className += " responsive";
+			x.classList.add("responsive");
 			y.style = "display: none";
 		} else {
-			x.className = "topnav";
+			x.classList.remove("responsive");
 			y.style = "display: block; font-size: 1.3em;";
 		}
 	}
+
 </script>
