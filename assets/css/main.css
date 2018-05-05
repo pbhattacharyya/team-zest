@@ -49,7 +49,7 @@ h1.challenge {
  font-size: 4em;
 	text-decoration: none;
 	line-height: 1.5em;
-	color: #bcbcbc;
+	color: #cdcdcd;
 }
 
 h4.challenge {
@@ -111,12 +111,27 @@ h2.insights {
 	padding-top: 1em;
 }
 
+h2.framework {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5em;
+	   text-decoration: none;
+	   line-height: 1.2em;
+	color: #323232;
+	padding-top: 1em;
+}
+
 h2.concepts {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2em;
 	   text-decoration: none;
 	   line-height: 1.2em;
 	padding-top: 1em;
+}
+
+.padded-left-image {
+	padding-left: 1.3em;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 @media screen and (max-width: 736px) {
@@ -141,6 +156,10 @@ h2.concepts {
 		h2.insights {
 			font-size: 1.4em;
 			   line-height: 1.2em;
+		}
+
+		h2.framework {
+			font-size: 1.2em;
 		}
 
 		h2.concepts {
@@ -1867,7 +1886,7 @@ h2.concepts {
 
 
 	b.challenge {
-		color: #ffffff;
+		color: white;
 	}
 
 		h1.major {
@@ -3409,11 +3428,11 @@ h2.concepts {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #5c5c5c;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #5c5c5c;
 		}
 
 		.wrapper.style2 {
@@ -3665,7 +3684,7 @@ h2.concepts {
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
 
 		#footer > .inner a:hover {
@@ -3674,7 +3693,7 @@ h2.concepts {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.35);
 	}
 
 	#header + #wrapper + #footer > .inner {
