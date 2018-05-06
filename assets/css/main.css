@@ -42,6 +42,14 @@ a#img-link{
   background-size: cover;
 }
 
+#concept1 {
+	background-color: #00318A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1.challenge {
 /* 	font-family: 'Fredoka One', cursive;
  */	
@@ -135,7 +143,49 @@ h2.concepts {
 	padding-bottom: 10px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 480px) {
+
+	.padded-left-image {
+		padding-left: 0;
+	}
+
+	div.section-area {
+			padding-left: 2em;
+			padding-right: 2em;
+			padding-bottom: 3em;
+		}
+
+	.padded-image {
+			padding: 1em;
+		}
+
+		#concept-box {
+			text-align: center;
+		}
+
+		#process {
+			text-align: center;
+		}
+
+
+}
+
+@media screen and (min-width: 1281px ) {
+	div.concept-content {
+		padding-left: 330px;
+	
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#process {
+		text-align: center;
+	}
+	
+	#concept-box {
+		text-align: center;
+	}
 
 	.home-part {
 		padding-top: 5em;
@@ -150,12 +200,12 @@ h2.concepts {
 		}
 
 		h1.insights {
-			font-size: 3em;
+			font-size: 2.3em;
 			   line-height: 1.3em;
 		}
 		
 		h2.insights {
-			font-size: 1.4em;
+			font-size: 1.2em;
 			   line-height: 1.3em;
 		}
 
@@ -164,7 +214,7 @@ h2.concepts {
 		}
 
 		h2.concepts {
-			font-size: 1.4em;
+			font-size: 1.2em;
 			line-height: 1.2em;
 		}
 
@@ -2051,7 +2101,7 @@ h2.concepts {
 
 /* Button */
 
-	input[type="submit"],
+/* 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2214,7 +2264,7 @@ h2.concepts {
 				input[type="button"]:hover:active:after,
 				button:hover:active:after,
 				.button:hover:active:after {
-					opacity: 0.1;
+					opacity: 0.1; */
 				}
 
 /* Features */
@@ -3430,7 +3480,7 @@ h2.concepts {
 		}
 
 		.wrapper.style1 {
-			background-color: #5c5c5c;
+			background-color: #eeeeee;
 		}
 
 		.wrapper.style1-alt {
@@ -3446,7 +3496,7 @@ h2.concepts {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #dddddd;
 		}
 
 		.wrapper.style3-alt {
@@ -3695,7 +3745,8 @@ h2.concepts {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.35);
+		color: white;
+
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3918,14 +3969,13 @@ h2.concepts {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(0, 0, 0, 0.35);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
 			outline: 0;
-			padding: 1.35em 0;
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
@@ -3942,19 +3992,10 @@ h2.concepts {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
-				max-width: 0;
+
 			}
 
 			#sidebar nav a:hover {
@@ -3962,7 +4003,7 @@ h2.concepts {
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #000000;
 			}
 
 				#sidebar nav a.active:after {
@@ -4105,7 +4146,7 @@ h2.concepts {
 	color: #f2f2f2;
 }
 
-.topnav a:hover {
+.topnav a.dropdown-button:hover {
   background-color: #ddd;
   color: black;
   text-shadow: none;
@@ -4135,14 +4176,12 @@ h2.concepts {
   	right: 0;
 	height: 100%;
 	z-index: 300;
-	background-color: rgba(255, 0, 0, 0.6);
+	background-color: rgba(67,67,67, 0.8);
 	-webkit-animation: hamburger-menu-appears 300ms; /* Safari 4+ */
 	-moz-animation:    hamburger-menu-appears 300ms; /* Fx 5+ */
 	-o-animation:      hamburger-menu-appears 300ms; /* Opera 12+ */
 	animation:         hamburger-menu-appears 300ms; /* IE 10+, Fx 29+ */
 	animation-direction: alternate;
-	
-
 }
 
   .topnav.responsive a {
@@ -4150,6 +4189,24 @@ h2.concepts {
     display: block;
 	text-align: center;
   }
+
+  	#hamburger {
+     color: white;
+  }
+
+	#hamburger:hover {
+
+	background-color: none;
+		color: #c2c2c2;
+		text-shadow: none;
+		-moz-transition: color 0.2s ease;
+		-webkit-transition: color 0.2s ease;
+		-ms-transition: color 0.2s ease;
+		transition: color 0.2s ease;
+
+}
+
+
 
   .topnav.responsive .icon {
 	position: absolute;
@@ -4180,5 +4237,48 @@ h2.concepts {
 .concept-3 {
 	color: #8A003A;
 }
+
+concepts.heading-text {
+	color: white;
+   }
+
+   button {
+	border-radius: 2em;
+	font-size: 1.2em;
+	padding: .35em 1.35em;
+  }
+  
+  button:hover {
+  }
+  
+  button:active {
+  }
+  
+  button:focus {outline:0;}
+
+  button.trial2 {
+	background-color: transparent;
+	border-radius: 1.4em;
+	border: solid 3px #e42354;
+	font-size: 1em;
+	color: #e42354;
+	 transition: color 200ms, background-color 200ms, border-radius 50ms ease, padding 50ms, margin 50ms;
+  }
+  
+  button.trial2:hover {
+	background-color: #e42354;
+	color: white;
+	 transition: color 500ms, background-color 500ms, border 100ms;
+  }
+  
+  button.trial2:active {
+	  border-radius: .15em;
+	background-color: #d11b36;
+	border-color: #d11b36;
+	   transition: border-radius 100ms ease, padding 50ms, margin 50ms;
+  
+  
+  }
+  
 
 /*topbar new navigation menu END */
