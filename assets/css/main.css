@@ -50,6 +50,22 @@ a#img-link{
   background-size: cover;
 }
 
+#concept2 {
+	background-color: #37008A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#concept3 {
+	background-color: #8A003A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1.challenge {
 /* 	font-family: 'Fredoka One', cursive;
  */	
@@ -158,10 +174,10 @@ h2.concepts {
 	.padded-image {
 			padding: 1em;
 		}
-
+/* 
 		#concept-box {
 			text-align: center;
-		}
+		} */
 
 		#process {
 			text-align: center;
@@ -183,9 +199,9 @@ h2.concepts {
 		text-align: center;
 	}
 	
-	#concept-box {
+/* 	#concept-box {
 		text-align: center;
-	}
+	} */
 
 	.home-part {
 		padding-top: 5em;
@@ -4199,10 +4215,10 @@ h2.concepts {
 	background-color: none;
 		color: #c2c2c2;
 		text-shadow: none;
-		-moz-transition: color 0.2s ease;
-		-webkit-transition: color 0.2s ease;
-		-ms-transition: color 0.2s ease;
-		transition: color 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		transition: all 0.2s ease;
 
 }
 
@@ -4260,7 +4276,7 @@ concepts.heading-text {
 	background-color: transparent;
 	border-radius: 1.4em;
 	border: solid 3px #e42354;
-	font-size: 1em;
+	font-size: 0.8em;
 	color: #e42354;
 	 transition: color 200ms, background-color 200ms, border-radius 50ms ease, padding 50ms, margin 50ms;
   }
@@ -4272,10 +4288,9 @@ concepts.heading-text {
   }
   
   button.trial2:active {
-	  border-radius: .15em;
 	background-color: #d11b36;
 	border-color: #d11b36;
-	   transition: border-radius 100ms ease, padding 50ms, margin 50ms;
+	   transition: padding 50ms, margin 50ms;
   
   
   }
